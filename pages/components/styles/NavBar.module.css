@@ -1,0 +1,47 @@
+.navBar {
+    width: 341px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navLink {
+    text-decoration: none;
+    color: #A1A1A1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s ease-in-out;
+}
+
+.navLink:hover {
+    color: #37B2FF;
+}
+
+.navLink:hover:active{
+    color: #37B2FF;
+}
+
+.navIcon {
+    width: 24px;
+    height: 24px;
+    transition: filter 0.2s ease-in-out, transform 0.2s ease-in-out;
+    filter: brightness(0) saturate(100%) invert(60%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.navLink:hover .navIcon {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(15%) saturate(2251%) hue-rotate(172deg) brightness(102%) contrast(97%);
+}
+
+.navLink:active .navIcon {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(15%) saturate(2251%) hue-rotate(172deg) brightness(102%) contrast(97%);
+}
+
+
+.linkName {
+    white-space: nowrap;
+}

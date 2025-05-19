@@ -1,0 +1,47 @@
+.homePageWrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    padding: 0 120px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 33px;
+    padding: 33px 0;
+}
+
+.userAvatar {
+    margin-left: auto;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.searchBarInput {
+    width: 387px;
+    height: 32px;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 0 32px;
+}
+
+.searchBarInput:focus {
+    outline: none;
+    border: 1px solid #37B2FF;
+}
+
+.searchIcon {
+    position: absolute;
+    padding: 0 6px;
+}

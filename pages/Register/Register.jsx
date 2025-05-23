@@ -4,10 +4,6 @@ import PasswordField from "../components/ui/PasswordField";
 import styles from './Register.module.css';
 
 function Register() {
-    useEffect(() => {
-        document.title = 'Регистрация - YouAI';
-    }, []);
-
     const validateEmail = (email) => {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     };
@@ -68,7 +64,7 @@ function Register() {
 
                 alert('Пользователь успешно зарегистрирован');
                 form.reset();
-                // window.location.href = '/dashboard';
+                window.location.href = '/home';
             } else {
                 const error = await response.json();
                 alert(`Ошибка: ${error.message || 'Не удалось зарегистрироваться'}`);

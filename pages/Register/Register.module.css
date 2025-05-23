@@ -1,6 +1,6 @@
 .formWrapper {
     height: 100vh;
-    width: 100%;
+    width: 87.5%;
     display: flex;
     justify-content: center;
     margin: 25px 0;
@@ -43,10 +43,4 @@
     border: none;
     margin-bottom: 8px;
     cursor: pointer;
-}
-
-@media (max-width: 400px) {
-    .inputForm {
-        width: 87.5%;
-    }
 }

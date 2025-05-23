@@ -7,10 +7,6 @@ import styles from './Login.module.css';
 function Login() {
     const navigate = useNavigate();
 
-    useEffect(() => {
-        document.title = 'Вход - YouAI';
-    }, []);
-
     const handleSubmit = async (e) => {
         e.preventDefault();
 

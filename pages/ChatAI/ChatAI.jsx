@@ -4,18 +4,14 @@ import NavBar from '../components/ui/NavBar';
 import styles from './ChatAI.module.css';
 
 const ChatAI = () => {
-    useEffect(() => {
-        document.title = 'Чат с ИИ';
-    }, []);
-
     return (
-        <div className={styles.homePageWrapper}>
+        <div className={styles.chatPageWrapper}>
             <header className={styles.header}>
                 <NavBar />
                 <img
-                src="/images/user-avatar.jpg"
-                alt="Аватар пользователя"
-                className={styles.userAvatar}
+                    src="icons/avatar.png"
+                    alt="Аватар пользователя"
+                    className={styles.userAvatar}
                 />
             </header>
 

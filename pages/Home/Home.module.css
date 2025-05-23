@@ -1,10 +1,9 @@
 .homePageWrapper{
-    width: 100%;
+    width: 87.5%;
     height: 100vh;
     background-color: #F9F9F9;
     display: flex;
     flex-direction: column;
-    padding: 0 120px;
 }
 
 .header {
@@ -20,6 +19,7 @@
     width: 41px;
     height: 41px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .searchBar {
@@ -44,4 +44,10 @@
 .searchIcon {
     position: absolute;
     padding: 0 6px;
+}
+
+@media (max-width: 768px) {
+    .userAvatar {
+        visibility: hidden;
+    }
 }
